@@ -8,9 +8,9 @@
 </head>
 
 <body>
-    <h1>Rose picker website</h1>
-    <main>
-        <h2>Rose photos</h2>
+
+    <header>
+        <h1>Rose picker website</h1>
         <nav>
             <p>Navigation panel</p>
             <ul>
@@ -20,8 +20,13 @@
                 <li><a href="#table1">Rose picker table</a></li>
                 <li><a href="#table2">Scientific aspect</a></li>
                 <li><a href="#free">When you visit our place</a></li>
+                <li><a href="#popular">Most popular rose</a></li>
             </ul>
         </nav>
+        <hr>
+    </header>
+    <main>
+
         <p>Click here to view <a href="https://unsplash.com/s/photos/rose-flower" target="_blank">rose photos</a></p>
 
         <figure>
@@ -33,7 +38,7 @@
         </figure>
         <!--loading="eager" is default. loading="lazy" delays to show photo.-->
 
-        <section id="Roses">
+        <article id="Roses">
             <h3>Rose lists</h3>
             <p>A list of your <em>favorite</em> roses.</p>
             <div class="lists">
@@ -44,15 +49,9 @@
                     <li><a href="https://unsplash.com/s/photos/black-rose" target="_blank">Black rose</a></li>
                     <li><a href="https://www.gettyimages.com/photos/blue-rose" target="_blank">Blue rose</a></li>
                 </ul>
-        </section>
+        </article>
 
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
+        <br> <br> <br> <br> <br>
 
         <section id="table1">
             <style>
@@ -69,34 +68,37 @@
             </style>
             <table style="width: 100%;">
                 <caption>Rose picker table</caption>
-                <tr>
-                    <th>Rose colour</th>
-                    <th style="width: 60%;">Growing season</th>
-                    <th>Country of origin</th>
-                    <th>Availability</th>
-                </tr>
-                <tr>
-                    <td>Brigt red</td>
-                    <td>Winter</td>
-                    <td style="height: 120px;">Bangladesh</td>
-                    <td>Avilable</td>
-                </tr>
-                <tr>
-                    <td>Tomato red</td>
-                    <td>Autumn</td>
-                    <td>India</td>
-                    <td>Available</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Rose colour</th>
+                        <th style="width: 60%;">Growing season</th>
+                        <th>Country of origin</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Brigt red</td>
+                        <td>Winter</td>
+                        <td style="height: 120px;">Bangladesh</td>
+                        <td>Avilable</td>
+                    </tr>
+                    <tr>
+                        <td>Tomato red</td>
+                        <td>Autumn</td>
+                        <td>India</td>
+                        <td>Available</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">More to be added</td>
+                    </tr>
+                </tfoot>
             </table>
         </section>
 
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
+        <br> <br> <br> <br> <br>
 
         <section id="table2">
             <style>
@@ -127,50 +129,51 @@
 
 
             <table style="width: 100%;">
-
                 <caption>Scientific aspect</caption>
-
-                <tr>
-                    <th colspan="2">Scientific Name</th>
-                    <th>Discovery year</th>
-                    <th>Discovery region</th>
-                </tr>
-
-                <tr>
-                    <td>abc</td>
-                    <td>def</td>
-                    <td>1080</td>
-                    <td>Indian Subcontinent</td>
-                </tr>
-                <tr>
-                    <td>efg</td>
-                    <td>hij</td>
-                    <td>1030</td>
-                    <td>India</td>
-                </tr>
-                <tr>
-                    <td>klm</td>
-                    <td>nop</td>
-                    <td>1040</td>
-                    <td>Britain</td>
-                </tr>
-                <tr>
-                    <td>qrs</td>
-                    <td>tuv</td>
-                    <td>1200</td>
-                    <td>USA</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th colspan="2">Scientific Name</th>
+                        <th>Discovery year</th>
+                        <th>Discovery region</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>abc</td>
+                        <td>def</td>
+                        <td>1080</td>
+                        <td>Indian Subcontinent</td>
+                    </tr>
+                    <tr>
+                        <td>efg</td>
+                        <td>hij</td>
+                        <td>1030</td>
+                        <td>India</td>
+                    </tr>
+                    <tr>
+                        <td>klm</td>
+                        <td>nop</td>
+                        <td>1040</td>
+                        <td>Britain</td>
+                    </tr>
+                    <tr>
+                        <td>qrs</td>
+                        <td>tuv</td>
+                        <td>1200</td>
+                        <td>USA</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">More information to be included</td>
+                    </tr>
+                </tfoot>
             </table>
         </section>
 
+        <br> <br> <br> <br> <br>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <section id="harmful">
+        <article id="harmful">
             <p>Things <strong>harmful</strong> to roses</p>
             <ol type="1"> <!--For ol type="1"/ "A"/ "a"/ "I"/ "i"-->
                 <li>Hail storm</li>
@@ -198,15 +201,11 @@
                 <li>Animal intervention</li>
 
             </ol>
-        </section>
+        </article>
         </div>
 
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <br> <br> <br> <br> <br>
 
 
         <section id="Downloads">
@@ -233,11 +232,7 @@
         </section>
 
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <br> <br> <br> <br> <br>
 
 
         <section id="free">
@@ -249,33 +244,35 @@
                 <dd>- white cold drink</dd>
             </dl>
         </section>
+        <br> <br> <br> <br> <br>
 
-
-        <br>
-        <br>
-        <br>
-
-        <section>
+        <article id="popular">
+            <p>Most popular rose colour is</p>
             <ol start="50">
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
+                <li>Red</li>
+                <li>Pink</li>
+                <li>Blue</li>
             </ol>
 
             <ol type="I" start="50">
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
+                <li>Red</li>
+                <li>Pink</li>
+                <li>Blue</li>
             </ol>
+        </article>
+        <br> <br> <br> <br> <br>
 
+        <section>
+            <aside>
+                <details>
+                    <summary>What <mark> percentage of people </mark> love red rose?</summary>
+                    <p>According to a 2020 survey by the Society of American Florists, red roses were the most popular
+                        flower purchased on Valentine's Day, accounting for over 60% of all flower sales.
+                    </p>
+                </details>
+            </aside>
         </section>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
+        <br> <br> <br> <br> <br>
 
         <section id="form">
             <form action="\Submit rose photos">
@@ -289,14 +286,16 @@
                 <button type="submit">Submit</button>
             </form>
         </section>
-        <hr>
-        <a href="#">Back to top</a>
-        <hr>
 
     </main>
     <footer>
-        <p><small>No copyright <a href="https://www.learn-html.org/" target="_blank"> learn-html.org</a></small></p>
+        <hr>
+        <p><small>&lt;&lt;&lt; No copyright <a href="https://www.learn-html.org/" target="_blank">
+                    learn-html.org </a> &gt;&gt;&gt;</small></p>
+
+        <a href="#">Back to top</a>
     </footer>
+
 </body>
 
 </html>
